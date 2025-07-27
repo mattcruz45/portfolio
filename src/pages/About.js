@@ -1,30 +1,32 @@
 import React from "react";
-import { User, Code, GraduationCap } from "lucide-react";
+import { User, Briefcase, GraduationCap } from "lucide-react";
 
 export default function About() {
     const aboutItems = [
         { 
             icon: User, 
-            title: "Who I Am", 
-            description: "A passionate developer focused on creating meaningful digital experiences" 
+            title: "who am i?", 
+            description: "i'm a software engineer currently interning at the walt disney company. i play the saxophone, go to the gym, drink coffee, program, and build some lego from time to time. i also dabble in cooking."
+            //"i'm a software engineer, musician, sports fan, gamer, gym-goer, coffee-drinker, lego-builder, and soon-to-be college grad in spring '26. i also dabble in cooking from time to time." 
         },
-        { 
-            icon: Code, 
-            title: "What I Do", 
-            description: "Full-stack development with modern technologies and best practices" 
-        },
+        // { 
+        //     icon: Briefcase, 
+        //     title: "what am i doing?", 
+        //     description: "i'm currently a software engineering intern at the walt disney company. i'm also working on a couple projects and a business with a friend, details in the projects section below. in my free time, you can probably find me doing one of the things listed above." 
+        // },
         { 
             icon: GraduationCap, 
-            title: "Education", 
-            description: "Computer Science student at Boston College" 
+            title: "what do i study?", 
+            description: "i'm studying computer science and math at boston college, and graduating in may of 2026." 
         }
     ];
 
+    // min-h-screen to take up whole screen
     return (
-        <section id="about" className="py-20 px-5 min-h-screen pt-16 max-w-4xl mx-auto bg-slate-800">
-            <div className="text-center mb-16">
-                <p className="text-xl text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
-                    about
+        <section id="about" className="py-5 px-5 pt-16 max-w-4xl mx-auto">
+            <div className="text-center mb-5">
+                <p className="text-4xl font-bold text-amber-100 max-w-2xl mx-auto leading-relaxed drop-shadow-lg hover:text-amber-200 hover:scale-125 transition-all duration-500 cursor-pointer">
+                    matthew cruz
                 </p>
             </div>
 

@@ -1,35 +1,35 @@
 import React from "react";
-import { Globe, Github, ExternalLink } from "lucide-react";
+import { Globe, Github, Gamepad2, ExternalLink } from "lucide-react";
 
 export default function Projects() {
     const projects = [
         { 
             icon: Globe, 
-            title: "Portfolio Website", 
-            description: "Personal portfolio built with React and Tailwind CSS",
-            link: "https://github.com/mattcruz45/portfolio",
-            demo: "#"
+            title: "all abroad", 
+            description: "the community messaging app for students studying abroad",
+            link: "https://github.com/mattcruz45/liveboard",
+            //demo: "#projects"
         },
         { 
-            icon: Github, 
-            title: "Project Two", 
-            description: "Description of your second project goes here",
-            link: "https://github.com/mattcruz45",
-            demo: "#"
-        },
-        { 
-            icon: Globe, 
-            title: "Project Three", 
-            description: "Description of your third project goes here",
-            link: "https://github.com/mattcruz45",
-            demo: "#"
-        }
+            icon: Gamepad2, 
+            title: "collisions", 
+            description: "a game",
+            link: "https://github.com/mattcruz45/collisions",
+            demo: "https://mattcruz45.github.io/collisions/"
+        }//,
+        // { 
+        //     icon: Globe, 
+        //     title: "Project Three", 
+        //     description: "Description of your third project goes here",
+        //     link: "https://github.com/mattcruz45",
+        //     demo: "#"
+        // }
     ];
 
     return (
-        <section id="projects" className="py-20 px-5 min-h-screen pt-16 max-w-4xl mx-auto bg-slate-800">
-            <div className="text-center mb-16">
-                <p className="text-xl text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+        <section id="projects" className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
+            <div className="text-center mb-5">
+                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
                     projects
                 </p>
             </div>

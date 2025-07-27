@@ -21,7 +21,15 @@ export default function Navbar() {
                                 onClick={() => scrollToSection("about")}
                                 className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
                             >
-                                about
+                                mattcruz
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => scrollToSection("contact")}
+                                className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
+                            >
+                                links
                             </button>
                         </li>
                         <li>
@@ -30,14 +38,6 @@ export default function Navbar() {
                                 className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
                             >
                                 projects
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                onClick={() => scrollToSection("contact")}
-                                className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
-                            >
-                                contact
                             </button>
                         </li>
                         <li>

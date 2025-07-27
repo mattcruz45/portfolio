@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import { Mail, Phone, Linkedin, Github, Copy, Check } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Copy, Check, ExternalLink } from "lucide-react";
 
 export default function Contact() {
     const [copied, setCopied] = useState("");
 
     const contacts = [
-        { icon: Mail, label: "personal email", value: "mattcruz4545@gmail.com", link: "mailto:mattcruz4545@gmail.com" },
-        { icon: Mail, label: "school email", value: "matthew.cruz@bc.edu", link: "mailto:matthew.cruz@bc.edu" },
-        { icon: Phone, label: "phone", value: "732-925-9552", link: "tel:+17329259552" },
-        { icon: Linkedin, label: "linkedin", value: "matthew cruz", link: "https://www.linkedin.com/in/matthew-cruz-b2b127260/" },
-        { icon: Github, label: "github", value: "mattcruz45", link: "https://github.com/mattcruz45" }
+        { icon: Github, label: "github", value: "mattcruz45", link: "https://github.com/mattcruz45", copyValue: "https://github.com/mattcruz45" },
+        { icon: Linkedin, label: "linkedin", value: "matthew cruz", link: "https://www.linkedin.com/in/matthew-cruz-b2b127260/", copyValue: "https://www.linkedin.com/in/matthew-cruz-b2b127260/" },
+        { icon: Mail, label: "personal email", value: "mattcruz4545@gmail.com", link: "mailto:mattcruz4545@gmail.com", copyValue: "mattcruz4545@gmail.com" },
+        { icon: Mail, label: "school email", value: "matthew.cruz@bc.edu", link: "mailto:matthew.cruz@bc.edu", copyValue: "matthew.cruz@bc.edu" },
+        { icon: Phone, label: "phone", value: "732-925-9552", link: "tel:+17329259552", copyValue: "732-925-9552" }
     ];
 
     const handleCopy = async (text, key) => {
@@ -19,10 +19,10 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact"className="py-20 px-5 min-h-screen mt-12 max-w-4xl mx-auto bg-slate-800">
-            <div className="text-center mb-16">
-                <p className="text-xl text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
-                    contact
+        <section id="contact"className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
+            <div className="text-center mb-5">
+                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+                    links & info
                 </p>
             </div>
 
@@ -40,14 +40,19 @@ export default function Contact() {
                                 </a>
                             </div>
                         </div>
-                        <button onClick={() => handleCopy(contact.value, i)} className="p-3 text-amber-100/60 hover:text-amber-100 hover:bg-slate-600/40 rounded-xl transition-all duration-300">
-                            {copied === i ? <Check className="w-5 h-5 text-green-400 animate-pulse" /> : <Copy className="w-5 h-5" />}
-                        </button>
+                        <div className="flex space-x-2">
+                            <button onClick={() => handleCopy(contact.copyValue, i)} className="p-3 text-amber-100/60 hover:text-amber-100 hover:bg-slate-600/40 rounded-xl transition-all duration-300">
+                                {copied === i ? <Check className="w-5 h-5 text-green-400 animate-pulse" /> : <Copy className="w-5 h-5" />}
+                            </button>
+                            <a href={contact.link} target="_blank" rel="noopener noreferrer" className="p-3 text-amber-100/60 hover:text-amber-100 hover:bg-slate-600/40 rounded-xl transition-all duration-300">
+                                <ExternalLink className="w-5 h-5" />
+                            </a>
+                        </div>
                     </div>
                 ))}
             </div>
 
-            <div className="text-center mt-12">
+            <div className="text-center">
                 <p className="text-amber-100/60 text-sm drop-shadow-sm">
                 </p>
             </div>

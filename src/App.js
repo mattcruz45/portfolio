@@ -23,8 +23,8 @@ function App() {
         <div className="bg-slate-800 min-h-screen">
             <Navbar />
             <About />
-            <Projects />
             <Contact />
+            <Projects />
             <Blog />
         </div>
     );
