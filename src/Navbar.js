@@ -21,7 +21,7 @@ export default function Navbar() {
                                 onClick={() => scrollToSection("about")}
                                 className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
                             >
-                                mattcruz
+                                about
                             </button>
                         </li>
                         <li>
@@ -42,12 +42,20 @@ export default function Navbar() {
                         </li>
                         <li>
                             <button
+                                onClick={() => scrollToSection("resume")}
+                                className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
+                            >
+                                resume
+                            </button>
+                        </li>
+                        {/* <li>
+                            <button
                                 onClick={() => scrollToSection("blog")}
                                 className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
                             >
                                 blog
                             </button>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

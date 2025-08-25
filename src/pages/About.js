@@ -6,7 +6,7 @@ export default function About() {
         { 
             icon: User, 
             title: "who am i?", 
-            description: "i'm a software engineer currently interning at the walt disney company. i play the saxophone, go to the gym, drink coffee, program, and build some lego from time to time. i also dabble in cooking."
+            description: "i'm a software engineer who enjoys building things. i play the saxophone, go to the gym, drink coffee, program (obviously), and build some lego from time to time. i also dabble in cooking."
             //"i'm a software engineer, musician, sports fan, gamer, gym-goer, coffee-drinker, lego-builder, and soon-to-be college grad in spring '26. i also dabble in cooking from time to time." 
         },
         // { 

@@ -5,7 +5,7 @@ export default function Projects() {
     const projects = [
         { 
             icon: Globe, 
-            title: "all abroad", 
+            title: "all abroad (private repo)", 
             description: "the community messaging app for students studying abroad",
             link: "https://github.com/mattcruz45/liveboard",
             //demo: "#projects"
@@ -29,7 +29,7 @@ export default function Projects() {
     return (
         <section id="projects" className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
             <div className="text-center mb-5">
-                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm hover:text-amber-200 hover:scale-125 transition-all duration-500 cursor-pointer">
                     projects
                 </p>
             </div>

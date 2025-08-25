@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Links from "./pages/Contact";
+import Resume from "./pages/Resume";
 import Blog from "./pages/Blog";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Links />
             <Projects />
             {/* <Blog /> */}
+            <Resume />
         </div>
     );
 }

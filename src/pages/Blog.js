@@ -24,9 +24,9 @@ export default function Blog() {
     ];
 
     return (
-        <section id="blog" className="py-20 px-5 min-h-screen pt-16 max-w-4xl mx-auto bg-slate-800">
-            <div className="text-center mb-16">
-                <p className="text-xl text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+        <section id="blog" className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
+            <div className="text-center mb-5">
+                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
                     blog
                 </p>
             </div>

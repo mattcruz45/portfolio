@@ -5,8 +5,8 @@ export default function Links() {
     const [copied, setCopied] = useState("");
 
     const contacts = [
-        { icon: Github, label: "github", value: "mattcruz45", link: "https://github.com/mattcruz45", copyValue: "https://github.com/mattcruz45" },
         { icon: Linkedin, label: "linkedin", value: "matthew cruz", link: "https://www.linkedin.com/in/matthew-cruz-b2b127260/", copyValue: "https://www.linkedin.com/in/matthew-cruz-b2b127260/" },
+        { icon: Github, label: "github", value: "mattcruz45", link: "https://github.com/mattcruz45", copyValue: "https://github.com/mattcruz45" },
         { icon: Mail, label: "personal email", value: "mattcruz4545@gmail.com", link: "mailto:mattcruz4545@gmail.com", copyValue: "mattcruz4545@gmail.com" },
         { icon: Mail, label: "school email", value: "matthew.cruz@bc.edu", link: "mailto:matthew.cruz@bc.edu", copyValue: "matthew.cruz@bc.edu" },
         { icon: Phone, label: "phone", value: "732-925-9552", link: "tel:+17329259552", copyValue: "732-925-9552" }
@@ -21,7 +21,7 @@ export default function Links() {
     return (
         <section id="links"className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
             <div className="text-center mb-5">
-                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
+                <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm hover:text-amber-200 hover:scale-125 transition-all duration-500 cursor-pointer">
                     links & info
                 </p>
             </div>
