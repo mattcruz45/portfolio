@@ -5,7 +5,7 @@ export default function Links() {
     const [copied, setCopied] = useState("");
 
     const contacts = [
-        { icon: Linkedin, label: "linkedin", value: "matthew cruz", link: "https://www.linkedin.com/in/matthew-cruz-b2b127260/", copyValue: "https://www.linkedin.com/in/matthew-cruz-b2b127260/" },
+        { icon: Linkedin, label: "linkedin", value: "matthew cruz", link: "https://www.linkedin.com/in/cruz-matt/", copyValue: "https://www.linkedin.com/in/cruz-matt/" },
         { icon: Github, label: "github", value: "mattcruz45", link: "https://github.com/mattcruz45", copyValue: "https://github.com/mattcruz45" },
         { icon: Mail, label: "personal email", value: "mattcruz4545@gmail.com", link: "mailto:mattcruz4545@gmail.com", copyValue: "mattcruz4545@gmail.com" },
         { icon: Mail, label: "school email", value: "matthew.cruz@bc.edu", link: "mailto:matthew.cruz@bc.edu", copyValue: "matthew.cruz@bc.edu" },

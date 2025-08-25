@@ -27,16 +27,16 @@ export default function Resume() {
                         </div>
                         <div>
                             {/* <p className="text-sm font-medium text-amber-100/70 mb-1">resume</p> */}
-                            <p className="text-amber-50 font-medium text-lg drop-shadow-sm">click to download</p>
+                            <p className="text-amber-50 font-medium text-lg drop-shadow-sm">click to download or visit</p>
                         </div>
                     </div>
                     <div className="flex space-x-2">
-                        <a href={`${process.env.PUBLIC_URL}/Matthew_Cruz_Resume2025.pdf`} target="_blank" rel="noopener noreferrer" className="p-3 text-amber-100/60 hover:text-amber-100 hover:bg-slate-600/40 rounded-xl transition-all duration-300">
-                            <ExternalLink className="w-5 h-5" />
-                        </a>
                         <button onClick={handleResumeDownload} className="p-3 text-amber-100/60 hover:text-amber-100 hover:bg-slate-600/40 rounded-xl transition-all duration-300">
                             <Download className="w-5 h-5" />
                         </button>
+                        <a href={`${process.env.PUBLIC_URL}/Matthew_Cruz_Resume2025.pdf`} target="_blank" rel="noopener noreferrer" className="p-3 text-amber-100/60 hover:text-amber-100 hover:bg-slate-600/40 rounded-xl transition-all duration-300">
+                            <ExternalLink className="w-5 h-5" />
+                        </a>
                     </div>
                 </div>
             </div>
