@@ -1,5 +1,5 @@
 import React from "react";
-import { Globe, Github, Gamepad2, ExternalLink } from "lucide-react";
+import { Globe, Github, Gamepad2, ExternalLink, BookType } from "lucide-react";
 
 export default function Projects() {
     const projects = [
@@ -16,14 +16,15 @@ export default function Projects() {
             description: "a game",
             link: "https://github.com/mattcruz45/collisions",
             demo: "https://mattcruz45.github.io/collisions/"
-        }//,
-        // { 
-        //     icon: Globe, 
-        //     title: "Project Three", 
-        //     description: "Description of your third project goes here",
-        //     link: "https://github.com/mattcruz45",
-        //     demo: "#"
-        // }
+        }
+        ,
+        { 
+            icon: BookType, 
+            title: "summarizeit", 
+            description: "create a summary of any book, article, or paper",
+            link: "https://github.com/mattcruz45/summarizeit",
+            demo: "https://shakespeare-summary.netlify.app/"
+        }
     ];
 
     return (
