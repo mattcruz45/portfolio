@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Mail, Phone, Linkedin, Github, Copy, Check, ExternalLink } from "lucide-react";
 
-export default function Contact() {
+export default function Links() {
     const [copied, setCopied] = useState("");
 
     const contacts = [
@@ -19,7 +19,7 @@ export default function Contact() {
     };
 
     return (
-        <section id="contact"className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
+        <section id="links"className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
             <div className="text-center mb-5">
                 <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm">
                     links & info

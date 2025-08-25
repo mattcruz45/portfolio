@@ -26,7 +26,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <button
-                                onClick={() => scrollToSection("contact")}
+                                onClick={() => scrollToSection("links")}
                                 className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
                             >
                                 links

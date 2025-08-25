@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "./Navbar";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import Links from "./pages/Contact";
 import Blog from "./pages/Blog";
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
         <div className="bg-slate-800 min-h-screen">
             <Navbar />
             <About />
-            <Contact />
+            <Links />
             <Projects />
-            <Blog />
+            {/* <Blog /> */}
         </div>
     );
 }
