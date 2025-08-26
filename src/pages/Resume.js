@@ -15,7 +15,7 @@ export default function Resume() {
         <section id="resume" className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
             <div className="text-center mb-5">
                 <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm hover:text-amber-200 hover:scale-125 transition-all duration-500 cursor-pointer">
-                    resume (aug '25)
+                    resume
                 </p>
             </div>
 
@@ -26,7 +26,7 @@ export default function Resume() {
                             <FileUser className="w-6 h-6 text-amber-100 drop-shadow-sm" />
                         </div>
                         <div>
-                            {/* <p className="text-sm font-medium text-amber-100/70 mb-1">resume</p> */}
+                            <p className="text-sm font-medium text-amber-100/70 mb-1">updated aug '25</p>
                             <p className="text-amber-50 font-medium text-lg drop-shadow-sm">click to download or visit</p>
                         </div>
                     </div>

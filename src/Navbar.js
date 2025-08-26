@@ -42,6 +42,14 @@ export default function Navbar() {
                         </li>
                         <li>
                             <button
+                                onClick={() => scrollToSection("technologies")}
+                                className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
+                            >
+                                technologies
+                            </button>
+                        </li>
+                        <li>
+                            <button
                                 onClick={() => scrollToSection("resume")}
                                 className="text-amber-100/80 hover:text-amber-50 transition-colors font-medium"
                             >

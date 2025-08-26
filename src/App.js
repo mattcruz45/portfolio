@@ -4,7 +4,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Links from "./pages/Contact";
 import Resume from "./pages/Resume";
-import Blog from "./pages/Blog";
+import Technologies from "./pages/Technologies";
 
 function App() {
     // Handle URL hash navigation
@@ -26,6 +26,7 @@ function App() {
             <About />
             <Links />
             <Projects />
+            <Technologies />
             {/* <Blog /> */}
             <Resume />
         </div>
