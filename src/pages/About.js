@@ -18,7 +18,7 @@ export default function About() {
     return (
         <section id="about" className="py-8 px-4 pt-20 max-w-4xl mx-auto md:py-12 md:px-6 lg:py-16">
             {/* Name/Header */}
-            <div className="text-center mb-8 md:mb-12">
+            <div className="text-center mb-8 md:mb-8">
                 <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-100 max-w-2xl mx-auto leading-relaxed drop-shadow-lg hover:text-amber-200 hover:scale-110 md:hover:scale-125 transition-all duration-500 cursor-pointer">
                     matthew cruz
                 </p>
