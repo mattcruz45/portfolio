@@ -24,7 +24,7 @@ function App() {
         <div className="bg-slate-800 min-h-screen">
             <Navbar />
             {/* Add top padding to account for fixed navbar */}
-            <main className="pt-16 md:pt-20">
+            <main className="pt-16 md:pt-6">
                 <About />
                 <Links />
                 <Projects />
