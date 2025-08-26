@@ -15,7 +15,7 @@ export default function Resume() {
         <section id="resume" className="py-5 px-5 pt-16 max-w-4xl mx-auto bg-slate-800">
             <div className="text-center mb-5">
                 <p className="text-2xl font-bold text-amber-100/80 max-w-2xl mx-auto leading-relaxed drop-shadow-sm hover:text-amber-200 hover:scale-125 transition-all duration-500 cursor-pointer">
-                    resume
+                    resume (aug '25)
                 </p>
             </div>
 
