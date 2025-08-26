@@ -10,30 +10,34 @@
 
   body {
     @apply bg-slate-800 text-amber-50 min-h-screen;
-    font-family: Menlo;
+    font-family: Menlo, Monaco, 'Cascadia Code', 'Segoe UI Mono', 'Roboto Mono', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
   }
 
   #root {
     @apply min-h-screen bg-slate-800;
   }
 
-  /* Custom scrollbar */
-  ::-webkit-scrollbar {
-    @apply w-2;
-  }
+  /* Custom scrollbar - hide on mobile for better UX */
+  @media (min-width: 768px) {
+    ::-webkit-scrollbar {
+      @apply w-2;
+    }
 
-  ::-webkit-scrollbar-track {
-    @apply bg-slate-800;
-  }
+    ::-webkit-scrollbar-track {
+      @apply bg-slate-800;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    @apply bg-slate-600 rounded-full;
-  }
+    ::-webkit-scrollbar-thumb {
+      @apply bg-slate-600 rounded-full;
+    }
 
-  ::-webkit-scrollbar-thumb:hover {
-    @apply bg-slate-500;
+    ::-webkit-scrollbar-thumb:hover {
+      @apply bg-slate-500;
+    }
   }
 }
 
@@ -49,6 +53,8 @@
     @apply bg-slate-600/40 backdrop-blur-sm rounded-xl border border-slate-500/20
     hover:bg-slate-500/40 transition-all duration-300 text-amber-100
     drop-shadow-sm;
+    /* Make buttons touch-friendly on mobile */
+    min-height: 44px;
   }
 
   .theme-text-primary {
@@ -65,6 +71,8 @@
 
   .theme-heading {
     @apply text-amber-50 font-bold drop-shadow-lg;
+    /* Responsive font sizes */
+    font-size: clamp(1.5rem, 4vw, 3rem);
   }
 
   .theme-container {
@@ -72,6 +80,88 @@
   }
 
   .theme-section {
-    @apply py-20 px-5 max-w-4xl mx-auto;
+    @apply py-12 px-4 max-w-4xl mx-auto;
+    /* More padding on larger screens */
+    @screen md {
+      @apply py-20 px-6;
+    }
+    @screen lg {
+      @apply px-8;
+    }
+  }
+
+  /* Mobile-first responsive text sizes */
+  .responsive-text-xl {
+    @apply text-lg;
+    @screen md {
+      @apply text-xl;
+    }
+    @screen lg {
+      @apply text-2xl;
+    }
+  }
+
+  .responsive-text-2xl {
+    @apply text-xl;
+    @screen md {
+      @apply text-2xl;
+    }
+    @screen lg {
+      @apply text-3xl;
+    }
+  }
+
+  .responsive-text-3xl {
+    @apply text-2xl;
+    @screen md {
+      @apply text-3xl;
+    }
+    @screen lg {
+      @apply text-4xl;
+    }
+  }
+
+  /* Responsive grid layouts */
+  .responsive-grid {
+    @apply grid grid-cols-1 gap-4;
+    @screen sm {
+      @apply grid-cols-2 gap-6;
+    }
+    @screen lg {
+      @apply grid-cols-3 gap-8;
+    }
+  }
+
+  /* Mobile-optimized spacing */
+  .mobile-spacing {
+    @apply space-y-4;
+    @screen md {
+      @apply space-y-6;
+    }
+    @screen lg {
+      @apply space-y-8;
+    }
+  }
+}
+
+/* Utilities for common mobile patterns */
+@layer utilities {
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Prevent zoom on inputs on iOS */
+  input, select, textarea {
+    font-size: 16px;
+  }
+
+  @screen md {
+    input, select, textarea {
+      font-size: 14px;
+    }
   }
 }

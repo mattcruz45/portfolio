@@ -9,7 +9,7 @@ import Technologies from "./pages/Technologies";
 function App() {
     // Handle URL hash navigation
     useEffect(() => {
-        const hash = window.location.hash.substring(1); // Remove #
+        const hash = window.location.hash.substring(1);
         if (hash) {
             setTimeout(() => {
                 const element = document.getElementById(hash);
@@ -23,12 +23,14 @@ function App() {
     return (
         <div className="bg-slate-800 min-h-screen">
             <Navbar />
-            <About />
-            <Links />
-            <Projects />
-            <Technologies />
-            {/* <Blog /> */}
-            <Resume />
+            {/* Add top padding to account for fixed navbar */}
+            <main className="pt-16 md:pt-20">
+                <About />
+                <Links />
+                <Projects />
+                <Technologies />
+                <Resume />
+            </main>
         </div>
     );
 }
