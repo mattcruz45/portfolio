@@ -32,6 +32,7 @@ export default function Technologies() {
         ],
         frontend: [
             { name: "React", logo: `${process.env.PUBLIC_URL}/tech-pngs/react.png` },
+            { name: "HTML", logo: `${process.env.PUBLIC_URL}/tech-pngs/html.png` },
             { name: "CSS", logo: `${process.env.PUBLIC_URL}/tech-pngs/css.png` },
             { name: "Tailwind CSS", logo: `${process.env.PUBLIC_URL}/tech-pngs/tailwind.png` },
             { name: "Swift UI", logo: `${process.env.PUBLIC_URL}/tech-pngs/swiftui.png` },
@@ -51,7 +52,6 @@ export default function Technologies() {
             { name: "LaTeX", logo: `${process.env.PUBLIC_URL}/tech-pngs/latex.png` },
             { name: "Docker", logo: `${process.env.PUBLIC_URL}/tech-pngs/docker.png` },
             { name: "Figma", logo: `${process.env.PUBLIC_URL}/tech-pngs/figma.png` },
-            { name: "HTML", logo: `${process.env.PUBLIC_URL}/tech-pngs/html.png` },
             { name: "Git", logo: `${process.env.PUBLIC_URL}/tech-pngs/git.png` },
             { name: "Postman", logo: `${process.env.PUBLIC_URL}/tech-pngs/postman.png` },
         ]
