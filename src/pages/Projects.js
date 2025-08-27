@@ -8,7 +8,7 @@ export default function Projects() {
             title: "all abroad (private repo)", 
             description: "the community messaging app for students studying abroad",
             link: "https://github.com/mattcruz45/liveboard",
-            //demo: "#projects"
+            demo: "https://youtube.com/shorts/OJ6Z-BNnSJw?feature=share"
         },
         { 
             icon: Gamepad2, 
