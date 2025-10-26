@@ -1,8 +1,15 @@
 import React from "react";
-import { Globe, Github, Gamepad2, ExternalLink, BookType } from "lucide-react";
+import { Globe, Github, Gamepad2, ExternalLink, BookType, CreditCard } from "lucide-react";
 
 export default function Projects() {
     const projects = [
+        { 
+            icon: CreditCard, 
+            title: "swipeme!", 
+            description: "a way to use your leftover dining bucks",
+            link: "https://github.com/ichiu03/SwipeMe",
+            demo: "https://youtube.com/shorts/GZDvuWtmqgg"
+        },
         { 
             icon: Globe, 
             title: "all abroad (private repo)", 
